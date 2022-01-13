@@ -30,9 +30,9 @@ module.exports = {
         filename: './index.html',
       }
     ),
-    new CopyWebpackPlugin([{
-      from: './src/style/style.css',
-      to: ''
-    }])
+    new CopyWebpackPlugin({
+      patterns: [{ from: './src/style/style.css',
+      to: '' }],
+    })
   ]
 }
